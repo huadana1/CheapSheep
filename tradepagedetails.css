@@ -1,0 +1,167 @@
+
+
+/*centers My Stuff*/
+
+h1 {
+  font-size: 100px;
+  margin: 0px;
+
+}
+
+/*makes cheap sheep to top left corner*/
+ img{
+     float: left;
+     width: 210px;
+     height: 160px;
+     margin: 0px;
+   }
+
+/*makes all buttons spaced out*/
+button{
+  color: white;
+  background-color: #4CAF50;
+  display: inline-block;
+  margin-top: 2.5px;
+  margin-bottom: 2.5px;
+  text-align: center;
+  height: 20px;
+  width:83px;
+  }
+
+p{
+  margin-bottom: 2px;
+}
+
+#upload {
+  width: 200px;
+  height: 180px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+
+
+table {
+  width: 70%;
+  float: right;
+  color: black;
+}
+
+td {
+  padding: 50px;
+  height: 300px;
+  color: black;
+  font-size: 20px;
+  width: auto;
+
+}
+
+
+
+
+/*dropdown nav bar*/
+.dropdown {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+  right: 0px;
+}
+
+.dropdown-content {
+  display: none;
+  float: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown a:link {
+    color: cadetblue;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+* {box-sizing: border-box;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+/*nav bar */
+#current {
+    background-color: cadetblue;
+}
+.topnav a, #current{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 6px;
+    margin-right: 12px;
+    margin-bottom: 6px;
+    border: 2px solid #5F9EA0;
+    font-size: 17px;
+}
+
+.topnav .search-container button {
+  float: right;
+  height: auto;
+  width: auto;
+  padding: 6px 10px;
+  margin-top: 6px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}

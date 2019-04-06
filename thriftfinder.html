@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thrift Finder</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 30px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: DarkSeaGreen;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: center;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: right;
+    width: 0%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: DarkGrey;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: DarkSeaGreen;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: Gray;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #98AFC7;
+  color: DarkGrey;
+}
+
+nav li{
+  display: inline;
+  margin-right: 15px;
+}
+</style>
+</head>
+<body>
+
+  <link rel="stylesheet" type="text/css" href="mytest.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Syncopate" rel="stylesheet">
+<div class="header">
+  <center><strong><h1><p style="font-size:80px;">Thrift Finder</p></h1></strong>
+</center>
+  <link rel="stylesheet" type="text/css" href="mytest.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<center><p><h3>Earn Money. Worry Less.</p></h3>
+<center><strong><h3><p style="font-size:30px;">Est. 2018</p></h3></strong>
+</center>
+<nav>
+
+  <link rel="stylesheet" type="text/css" href="mytest.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <ul style= "list-style-type:none; font-size: 18px; display: inline;">
+    <li><a href="#cardSection">Find a Thrift Store</a></li>
+    <li><a href="#leftcolumn"> Why is it important?</a></li>
+    <li><a href="#rightcolumn"> Other Websites</a></li>
+    <li><a href="#footer"> About the Founder</a></li>
+    <br>
+    <li> <a href= "index.php" > Home </a></li>
+  </ul>
+</nav>
+</div>
+
+
+<center>
+<div class="row">
+  <div class="leftcolumn">
+    <div id = "cardSection" class="card">
+      <link rel="stylesheet" type="text/css" href="style.css"/>
+      <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+      <center><strong><h2><p style="font-size:35px;"> Look 4 Nearest Stores</p></h2></center>
+      </center>
+      <marquee behavior="left"><center><strong><h3><p style="font-size:30px;">To look, zoom into the map and look for the city you're nearest to.</marquee></p></h3></center>
+      <center><p id="demo"></p>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1x7nF7xTUEzwtaclnJYi4aJMM7uFJojzM" width="740" height="780"></iframe>
+  </center>
+  </div>
+
+    <div class="card">
+    <div id = "leftcolumn" class="card">
+      <div class="card">
+      <center><strong><h2><p style="font-size:35px;">Why It's Important</p></h2></strong>
+      </center>
+
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+      <div class="slideshow-container">
+        <center><div class="mySlides1">
+          <img src="goodwill.jpg" style="width:80%">
+        </div>
+      </center>
+
+        <div class="mySlides1">
+          <center><img src="happy1.jpg" style="width:80%">
+        </div>
+      </center>
+
+        <div class="mySlides1">
+          <center><img src="out.jpg" style="width:80%">
+        </div>
+      </center>
+
+        <div class="mySlides1">
+          <center><img src="happy2.jpg" style="width:80%">
+        </div>
+      </center>
+
+        <div class="mySlides1">
+        <center><img src="salvatiion.jpg" style="width:80%">
+        </div>
+      </center>
+
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+
+
+
+      <script>
+      var slideIndex = [1,1];
+      var slideId = ["mySlides1", "mySlides2"]
+      showSlides(1, 0);
+      showSlides(1, 1);
+
+      function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+      }
+
+      function showSlides(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        x[slideIndex[no]-1].style.display = "block";
+      }
+      </script>
+
+      </body>
+</div>
+
+<center><h3><p style="font-size:35px;">Re-wearing clothes reduces waste and pollution.</p></h3></strong>
+</center>
+<center><h3><p style="font-size:20px;">Every piece purchased second-hand means one less new one produced, which is important because regardless of material, the production of clothing is bad to the environment. Producing synthetic fibers like polyester requires lots of energy, as well as oil that include toxic gases and chemicals.</p></h3></strong>
+<center><h3><p style="font-size:35px;">Many thrift stores directly support charity.<p></h3></strong>
+<center><h3><p style="font-size:20px;">In America, the best-known thrift stores are Goodwill and The Salvation Army, organizations which provide services to the unemployed, homeless, and disabled.</p></h3></strong>
+<center><h3><p style="font-size:35px;">Thrift shopping allows for more creativity.</p></h3></strong>
+<center><h3><p style="font-size:20px;">Provides more varied and interesting materials as inspiration.</p></h3></strong>
+
+    </div>
+  </div>
+
+  <div
+    <div class="card">
+  <div class="card">
+        <div id="rightcolumn" >
+      <marquee behavior="scroll" direction="left"><center><strong><h2><p style="font-size:30px;">Other Websites</marquee></p></h2></strong>
+      </center>
+      <center><strong><h3><p style="font-size:35px;">Cheap Sheep</p></h2></strong>
+      </center>
+    </div>
+</div>
+
+
+    <div class="card">
+      <marquee behavior="scroll" direction="left"><center><strong><h2><p style="font-size:30px;">Did You Know?</marquee></p></h2></strong>
+      <strong><h3><p style="font-size:35px;">-Most products sold at Thrift Stores are in better quality by being there.</p></h3></strong>
+      <strong><h3><p style="font-size:35px;">-Most of the time parents always find the perfect clothing for their children at a better price.</p></h3></strong>
+      <strong><h3><p style="font-size:35px;">-Many thrift stores support the community. The Salvation Army donates all of it's profits to charities.</p></h3></strong>
+    </div>
+
+
+<div>
+<div class="footer">
+  <div class="card">
+    <div id = "footer" class="footer">
+  <center><strong><h2><p style="font-size:45px;">About The Founder</p></h2></strong>
+    <h3><p style="font-size:25px;">Katherine Guemes</p></h3>
+  </center>
+  <img src="20170118_133315.jpg" style="width:200px">
+
+<strong><center><h3><p style="font-size:30px;"> Hello! My name is Katherine and I am the founder of Thrift Finder. I created this website with the help of Girls Who Code. I joined Girls Who Code in June 2018 and I hope to create more websites like this. I will be a Senior this upcoming fall at Helen Bernstein High School. On my free time I like to; read, watch Netflix, and spend time with my family, friends, and cat. I created this website because nowadays, the prices of things are starting to increase, especially when it comes to clothing, furniture, and technology. I want people to enjoy the feeling of saving up money when it comes to spending only a few bucks on clothing, furniture, or technology. I hope that Thrift Finder will help encourage everyone to save money by going to Thrift Shops and buying secondhanded products that can be very beneficial for the state of California.</p></h3></strong>
+  </center>
+  <center><strong><h2><p style="font-size:30px;">Contact Information</p></h2></strong>
+</center>
+<p>
+<strong><h3><p style="font-size:25px;">Instagram</a>
+</center>
+<p><a href="https://www.instagram.com/katherinegalilea/" target="_top">KatherineGalilea</a></p>
+
+<strong><h2><p style="font-size:25px;">Emails</a>
+<strong><h3><p style="font-size:25px;"><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">kathy.511@icloud.com</a>
+</p></h3></strong>
+<strong><h3><p style="font-size:25px;"><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">katherine.849.kg@gmail.com</a>
+</p></h3></strong>
+</div>
+</center>
+
+</body>
+</html>
